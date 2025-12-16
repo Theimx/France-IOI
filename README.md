@@ -7,7 +7,7 @@
   
 ---
 ### *Description* :   
-[A collection of algorithmic problem solutions from the website France-IOI.](https://www.france-ioi.org/)  
+A collection of algorithmic problem solutions from the website [France-IOI.](https://www.france-ioi.org/)  
 
       
 ---
