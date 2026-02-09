@@ -237,24 +237,43 @@ def exo24chap3():
 #Exo 26 Chapitres 3, Validation: Lire ou ne pas lire, telle est la question
 
 def exo26chap3():
-    nbLivres = int(input())
-    livres = []
-    final = []
-    for i in range(nbLivres):
-        livres.append(input())
-    count = len(livres[0])
-    final.append(livres[0])
-    for i in livres: 
-        
-        if len(i)>count:
-            final.append(i)
-            count = len(i)
-    for titre in final:
-        print(titre)
+    nb_livre = input()
+    titre_l = 0
+
+    if nb_livre != "":
+
+        nb_livre = int(nb_livre)
+    else :
+
+        nb_livre = 0
+
+    for i in range(nb_livre):
+        titre = input()
+    
+        if len(titre) > titre_l:
+            print(titre) 
+            titre_l = len(titre)
         
 #Exo 27 Chapitres 3, Découverte: Fiches d’inscription
 
 #Exo 28 Chapitres 3, Validation: Analyse de fréquence
+
+def exo28chap3():
+    res = {}
+
+    nbLignes, nbMots = map(int, input().split())
+
+    for _ in range(nbLignes):
+        mots = input().split()
+        for mot in mots:
+            l = len(mot)
+            if l in res:
+                res[l] += 1
+            else:
+                res[l] = 1
+
+    for longueur in sorted(res):
+        print(longueur," : ",res[longueur])
 
 #Exo 29 Chapitres 3, Découverte: Impression d’étiquettes
 
