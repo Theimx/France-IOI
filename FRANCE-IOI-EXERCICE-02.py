@@ -305,4 +305,69 @@ def exo28chap3():
 
 #Exo 43 Chapitres 4, Validation: Formes creuses
 
+def exo42chap4():
+
+    X_ligne = int(input())
+    H_cube = int(input())
+    L_Cube = int(input())
+    H_triangle = int(input())
+
+    print("X"*X_ligne+"\n")
+
+    for i in range(1,H_cube+1):
+        if i == 1 and L_Cube != 1:
+            print("#"*L_Cube)
+        elif i == H_cube :
+            print("#"*L_Cube+"\n")
+        elif L_Cube == 1 :
+            print("#")
+        else : 
+            print("#",(" "*((L_Cube-4))),"#")
+        
+    for i in range(1,H_triangle+1):
+        if i <= 2:
+            print("@"*i)
+        elif i == 3:
+            print("@ @")
+        elif i == H_triangle : 
+            print("@"*H_triangle)
+        else : 
+            print("@"," " * (i-4),"@")
+
+def exo42chap4_2(h, l):
+    if h == 1:
+        print("#" * l)
+        return
+
+    print("#" * l)
+    for _ in range(h - 2):
+        print("#" + " " * (l - 2) + "#")
+    print("#" * l)
+
+def exo42chap4_3(h):
+    if h == 1:
+        print("@")
+        return
+
+    print("@")
+    print("@@")
+
+    for i in range(3, h):
+        print("@" + " " * (i - 2) + "@")
+
+    print("@" * h)
+
 #Exo 44 Chapitres 4, Validation: Convertisseur d'unités
+
+def exo44chap4():
+    nb = int(input())
+
+    for i in range(nb): 
+        conv = input()
+        res = conv.split()
+        if res[1] == 'm':
+            print(str((float(res[0])/ 0.3048)),"p")
+        elif res[1] == 'g':
+            print(str((float(res[0])*0.002205)),"l")
+        elif res[1] == 'c':
+            print(str((32 + 1.8 * float(res[0]))),"f")

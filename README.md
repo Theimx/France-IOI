@@ -13,7 +13,7 @@ A collection of algorithmic problem solutions from the website [France-IOI.](htt
 ---
 ### *Content* :  
 **FRANCE-IOI-EXERCICE-01.py** : 451  lines   
-**FRANCE-IOI-EXERCICE-02.py** : 289  lines     
+**FRANCE-IOI-EXERCICE-02.py** : 360  lines     
 
      
 ---
