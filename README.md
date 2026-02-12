@@ -3,7 +3,7 @@
 **Software Version : 1.0**  
 **AI : No AI used**   
 **File : 2 Python files**  
-**Line : 740 lines**
+**Line : 834 lines**
   
 ---
 ### *Description* :   
@@ -13,7 +13,7 @@ A collection of algorithmic problem solutions from the website [France-IOI.](htt
 ---
 ### *Content* :  
 **FRANCE-IOI-EXERCICE-01.py** : 451  lines   
-**FRANCE-IOI-EXERCICE-02.py** : 360  lines     
+**FRANCE-IOI-EXERCICE-02.py** : 373  lines     
 
      
 ---

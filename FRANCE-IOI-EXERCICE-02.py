@@ -279,6 +279,17 @@ def exo28chap3():
 
 #Exo 30 Chapitres 3, Validation: Écriture en miroir
 
+def exo30chap3():
+    
+    nb_rep = int(input())
+
+    for i in range(nb_rep):
+        put = input()
+        res = ""
+        for i in range(1,len(put)+1):
+            res = res + put[-i]
+        print(res)
+
 #Exo 31 Chapitres 3, Découverte: Inscription d’étudiants
 
 #Exo 32 Chapitres 3, Entraînement: ngms sns vlls
